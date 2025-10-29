@@ -9,7 +9,7 @@ import { Task } from '../components/task/task';
 })
 
 export class TaskService {
-  url = "http://localhost:8080/api/v1/task";
+  url = "https://taskmanager-api-42cd.onrender.com/api/v1/task";
   
   constructor(private http: HttpClient){}
 
