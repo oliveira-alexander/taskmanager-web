@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Lexend:wght@100..900&display=swap');
+
+.task-container{
+    background-color: lightyellow;
+    padding: 5%;
+    border-radius: 5%;
+    width: 25vw;
+    height: auto;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: end;
+}
+
+.buttons-container a{
+    margin-left: 2%;
+}
+
+.task-title{
+    font-family: "Delius";
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+
+.task-description-container{
+    margin-top: 5%;
+    font-family: "Lexend";
+    font-size: 15px;
+}
+
+.task-description-label{
+    font-weight: bold;
+}
+
+.task-description-text{
+    margin-left: 1vw;
+}
+
+@media (max-width: 420px)
+{
+    .task-title{
+        font-family: "Delius";
+        font-weight: bold;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .task-description-container{
+        margin-top: 5%;
+        font-family: "Lexend";
+        font-size: 12px;
+    }
+}

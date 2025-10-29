@@ -1,0 +1,23 @@
+<div class="page-container">
+
+    <h2 class="page-title text-center">Task Manager</h2>
+
+    <div class="btn-container">
+        <button [routerLink]="['/new']" class="btn btn-success"><i class="bi bi-calendar-plus-fill"></i> Adicionar Tarefa</button>
+    </div>
+
+    <div class="task-container">
+            @for (task of produtos; track task.id) {
+                    <app-task
+                        class="task"
+                        [id]="task.id"
+                        [title]="task.title"
+                        [description]="task.description"
+                        (edit)="editTask($event)"
+                        (delete)="deleteTask($event)"
+                    ></app-task>
+            }        
+    </div>
+</div>
+
+<app-footer></app-footer>

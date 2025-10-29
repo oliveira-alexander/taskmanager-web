@@ -1,0 +1,11 @@
+<div class="task-container">
+    <div class="buttons-container mb-2">
+        <a class="btn btn-warning" title="Alterar" (click)="editTask(this.id)"><i class="bi bi-pencil-square"></i></a>
+        <a class="btn btn-danger" title="Deletar" (click)="deleteTask(this.id)"><i class="bi bi-file-earmark-x-fill"></i></a>
+    </div>
+    <h2 class="task-title">{{ this.title }}</h2>
+    <hr>
+    <div class="task-description-container">
+        <span class="task-description-text">{{ this.description }}</span>
+    </div>
+</div>
